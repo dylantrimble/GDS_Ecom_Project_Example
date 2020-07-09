@@ -1,0 +1,128 @@
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+    }
+    
+    header {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        padding: 30px 10%;
+        background-color: #24252a;
+        height: 40px;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 4;
+    }
+
+    .logo {
+        margin: 25px;
+        cursor: pointer;
+    }
+    
+    .nav_links {
+        list-style: none;
+        padding: 0px 40px;
+    }
+    
+    nav {
+        display: flex;
+        justify-content: space-evenly;
+    }
+    
+    .nav_links,
+    li,
+    a {
+        transition: all 0.3s ease 0s;
+    }
+    
+    .nav_links,
+    li {
+        display: inline-block;
+    }
+    
+    .modelsLine {
+        text-align: center;
+    }
+    
+    li,
+    a,
+    button {
+        font-family: 'Montserrat Subrayada', sans-serif;
+        font-weight: 500;
+        font-size: 16px;
+        color: #edf0f1;
+        text-decoration: none;
+    }
+    
+    h1,
+    h2 {
+        font-family: 'Roboto', sans-serif;
+        text-align: center;
+        font-weight: 2000;
+        margin-top: 50px;
+    }
+    
+    .product-Links {
+        display: flex;
+        justify-content: space-evenly;
+    }
+    
+    .productContent {
+        height: 350px
+    }
+    
+    .products {
+        z-index: 0;
+        justify-content: center space-evenly;
+    }
+    
+    .image-desc {
+        font-family: 'Roboto', sans-serif;
+        text-align: center;
+        font-weight: 2000;
+        margin: 25px;
+        font-size: 30px;
+    }
+    
+    .product-hero {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+    
+    .foot-link-cont {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    footer {
+        background-color: #f0f0f0;
+        width: 100%;
+    }
+    .cont-description{
+        text-align: center;
+    }
+    .contact-page{
+        display: none;
+    }
+    .product-images{
+        height: 450px;
+        width: 450px;
+    }
+    .products-page{
+        display: none;
+    }
+    
+    @media only screen and (max-width: 650px) {
+        .card {
+            height: 340px !important;
+        }
+        .productContent {
+            flex: 0 1 calc(50% - 10px);
+            /* - 2 x 5px left & right margin */
+        }
+    }
